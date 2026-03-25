@@ -1,0 +1,88 @@
+POST: no thunder client (CTRL+SHIFT+R)
+http://localhost:5000/usuarios
+{
+  "nome":"Jansen",
+  "email":"jkc@gmail.com",
+  "senha":"123"
+}
+
+https://github.com/VitorLima21/FrontEndTopPlayer
+https://github.com/cisco/openh264
+https://www.bing.com/search?pglt=43&q=strict-transport-security+ko+que+e&cvid=1f54e7413f3b4be080269769d7874f07&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOdIBCDI4NzlqMGoxqAIAsAIA&FORM=ANNTA1&DAF0=1&PC=DCTS
+orm banco de dados prisma
+Criar o botão e a função alterar usuários
+Criar o botão e a função alterar jogos, conforme mostra a imagem 
+Criar o botão e a função alterar players, conforme mostra a imagem 
+Parabéns! Continue assim!
+
+
+/* Delimitador alterado para ; */
+/* Conectando em localhost via MariaDB or MySQL (TCP/IP), usuário root, usando a senha: Yes... */
+SELECT CONNECTION_ID();
+SHOW VARIABLES;
+/* Changing character set from utf8mb4 to utf8mb4 */
+/* CharacterSet: utf8mb4 */
+SHOW /*!50002 GLOBAL */ STATUS;
+SELECT NOW();
+/* Conectado. Thread-ID: 14 */
+/* Reading function definitions from C:\Program Files\Common Files\MariaDBShared\HeidiSQL\functions-mariadb.ini */
+SHOW TABLES FROM `information_schema`;
+SHOW DATABASES;
+SHOW OPEN TABLES FROM db_top_player WHERE `in_use`!=0;
+USE `db_top_player`;
+/* Entrando na sessão "Unnamed" */
+SELECT `DEFAULT_COLLATION_NAME` FROM `information_schema`.`SCHEMATA` WHERE `SCHEMA_NAME`='db_top_player';
+SHOW TABLE STATUS FROM `db_top_player`;
+SHOW FUNCTION STATUS WHERE `Db`='db_top_player';
+SHOW PROCEDURE STATUS WHERE `Db`='db_top_player';
+SHOW TRIGGERS FROM `db_top_player`;
+SELECT *, EVENT_SCHEMA AS `Db`, EVENT_NAME AS `Name` FROM information_schema.`EVENTS` WHERE `EVENT_SCHEMA`='db_top_player';
+/* Carregando arquivos "C:\Users\sn1060488\AppData\Roaming\HeidiSQL\Backups\query-tab-2026-02-11_16-27-51-088.sql" (11 B) na aba de consulta #1 */
+/* Redimensionando controles para tela DPI: 100% */
+SELECT * FROM `information_schema`.`COLUMNS` WHERE TABLE_SCHEMA='db_top_player' AND TABLE_NAME='usuarios' ORDER BY ORDINAL_POSITION;
+SHOW INDEXES FROM `usuarios` FROM `db_top_player`;
+SELECT * FROM information_schema.REFERENTIAL_CONSTRAINTS WHERE   CONSTRAINT_SCHEMA='db_top_player'   AND TABLE_NAME='usuarios'   AND REFERENCED_TABLE_NAME IS NOT NULL;
+SELECT * FROM information_schema.KEY_COLUMN_USAGE WHERE   TABLE_SCHEMA='db_top_player'   AND TABLE_NAME='usuarios'   AND REFERENCED_TABLE_NAME IS NOT NULL;
+SELECT FULL_COLLATION_NAME AS `Collation`, CHARACTER_SET_NAME AS `Charset`, ID AS `Id`, IS_DEFAULT AS `Default`, 0 AS `Sortlen` FROM `information_schema`.COLLATION_CHARACTER_SET_APPLICABILITY ORDER BY `Collation`;
+SHOW ENGINES;
+SHOW CREATE TABLE `db_top_player`.`usuarios`;
+SELECT CONSTRAINT_NAME, CHECK_CLAUSE FROM `information_schema`.`CHECK_CONSTRAINTS` WHERE CONSTRAINT_SCHEMA='db_top_player' AND TABLE_NAME='usuarios';
+SELECT * FROM `db_top_player`.`usuarios` LIMIT 1000;
+SELECT * FROM `information_schema`.`COLUMNS` WHERE TABLE_SCHEMA='db_top_player' AND TABLE_NAME='players' ORDER BY ORDINAL_POSITION;
+SHOW INDEXES FROM `players` FROM `db_top_player`;
+SELECT * FROM information_schema.REFERENTIAL_CONSTRAINTS WHERE   CONSTRAINT_SCHEMA='db_top_player'   AND TABLE_NAME='players'   AND REFERENCED_TABLE_NAME IS NOT NULL;
+SELECT * FROM information_schema.KEY_COLUMN_USAGE WHERE   TABLE_SCHEMA='db_top_player'   AND TABLE_NAME='players'   AND REFERENCED_TABLE_NAME IS NOT NULL;
+SHOW CREATE TABLE `db_top_player`.`players`;
+SELECT CONSTRAINT_NAME, CHECK_CLAUSE FROM `information_schema`.`CHECK_CONSTRAINTS` WHERE CONSTRAINT_SCHEMA='db_top_player' AND TABLE_NAME='players';
+SELECT * FROM `db_top_player`.`players` LIMIT 1000;
+SELECT * FROM `information_schema`.`COLUMNS` WHERE TABLE_SCHEMA='db_top_player' AND TABLE_NAME='partidas' ORDER BY ORDINAL_POSITION;
+SHOW INDEXES FROM `partidas` FROM `db_top_player`;
+SELECT * FROM information_schema.REFERENTIAL_CONSTRAINTS WHERE   CONSTRAINT_SCHEMA='db_top_player'   AND TABLE_NAME='partidas'   AND REFERENCED_TABLE_NAME IS NOT NULL;
+SELECT * FROM information_schema.KEY_COLUMN_USAGE WHERE   TABLE_SCHEMA='db_top_player'   AND TABLE_NAME='partidas'   AND REFERENCED_TABLE_NAME IS NOT NULL;
+SHOW CREATE TABLE `db_top_player`.`partidas`;
+SELECT CONSTRAINT_NAME, CHECK_CLAUSE FROM `information_schema`.`CHECK_CONSTRAINTS` WHERE CONSTRAINT_SCHEMA='db_top_player' AND TABLE_NAME='partidas';
+SELECT * FROM `db_top_player`.`partidas` LIMIT 1000;
+SELECT * FROM `information_schema`.`COLUMNS` WHERE TABLE_SCHEMA='db_top_player' AND TABLE_NAME='jogos' ORDER BY ORDINAL_POSITION;
+SHOW INDEXES FROM `jogos` FROM `db_top_player`;
+SELECT * FROM information_schema.REFERENTIAL_CONSTRAINTS WHERE   CONSTRAINT_SCHEMA='db_top_player'   AND TABLE_NAME='jogos'   AND REFERENCED_TABLE_NAME IS NOT NULL;
+SELECT * FROM information_schema.KEY_COLUMN_USAGE WHERE   TABLE_SCHEMA='db_top_player'   AND TABLE_NAME='jogos'   AND REFERENCED_TABLE_NAME IS NOT NULL;
+SHOW CREATE TABLE `db_top_player`.`jogos`;
+SELECT CONSTRAINT_NAME, CHECK_CLAUSE FROM `information_schema`.`CHECK_CONSTRAINTS` WHERE CONSTRAINT_SCHEMA='db_top_player' AND TABLE_NAME='jogos';
+SELECT * FROM `db_top_player`.`jogos` LIMIT 1000;
+SHOW CREATE TABLE `db_top_player`.`usuarios`;
+SELECT * FROM `db_top_player`.`usuarios` LIMIT 1000;
+SELECT * FROM `db_top_player`.`usuarios` LIMIT 1000;
+UPDATE `db_top_player`.`usuarios` SET `id`=1 WHERE  `id`=6;
+/* Erro SQL (1062): Duplicate entry '1' for key 'PRIMARY' */
+UPDATE `db_top_player`.`usuarios` SET `id`=1 WHERE  `id`=6;
+/* Erro SQL (1062): Duplicate entry '1' for key 'PRIMARY' */
+UPDATE `db_top_player`.`usuarios` SET `id`=2 WHERE  `id`=6;
+/* Informação: Rows matched: 1  Changed: 1  Warnings: 0 */
+SELECT `id`, `nome`, `email`, `senha_hash`, `criado_em` FROM `db_top_player`.`usuarios` WHERE  `id`=2;
+UPDATE `db_top_player`.`usuarios` SET `id`=3 WHERE  `id`=1;
+/* Informação: Rows matched: 1  Changed: 1  Warnings: 0 */
+SELECT `id`, `nome`, `email`, `senha_hash`, `criado_em` FROM `db_top_player`.`usuarios` WHERE  `id`=3;
+UPDATE `db_top_player`.`usuarios` SET `id`=1 WHERE  `id`=2;
+/* Informação: Rows matched: 1  Changed: 1  Warnings: 0 */
+SELECT `id`, `nome`, `email`, `senha_hash`, `criado_em` FROM `db_top_player`.`usuarios` WHERE  `id`=1;
+SELECT * FROM `db_top_player`.`usuarios` LIMIT 1000;
